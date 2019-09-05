@@ -7,7 +7,7 @@ def line(katz_deli)
   else 
     shoppers = []
       katz_deli.each_with_index do |name,index|
-      shoppers << "#{index+1}. #{shopper}"
+      shoppers << "#{index + 1}. #{name}"
     end
     puts "The line is currently:" + shoppers.join(" ")+ "."
   end
